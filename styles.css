@@ -1,15 +1,20 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-main-banner {
   background-image: url("./img/banner_bogota2.jpg");
-  background-repeat: no-repeat;
   background-size: 100% auto;
   width: 100%;
-  height: 450px;
-  border-radius: 5px;
+  height: 400px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: 2rem;
 }
-.card-main-banner .img-container {
+.card-main-banner .img-container-bgt {
   align-items: flex-end;
   display: flex;
   width: 100px;
@@ -24,18 +29,17 @@
 .card-main-banner .temperature-text {
   font-size: 3rem;
   color: black;
-  opacity: 1 !important;
   align-items: flex-end;
   display: flex;
   margin-bottom: 1rem;
 }
-.card-main-banner .tpm-description {
+.card-main-banner .tpm-description-bgt {
   font-size: 3rem;
   color: black;
-  opacity: 1 !important;
   align-items: flex-end;
   display: flex;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 .card-main-banner .temperature-text,
 .card-main-banner .tpm-description {
@@ -51,6 +55,47 @@
   margin: 1rem 0;
   border-radius: 10px;
   padding: 10px;
+}
+
+.card-second-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 45%;
+}
+
+.paris-wheater-container,
+.forest-bgt-container {
+  width: 48%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.forest-bgt-container {
+  border: solid black 1px;
+}
+
+.paris-wheater-container {
+  background-image: url("./img/banner_paris.jpg");
+  background-size: 100% auto;
+}
+.paris-wheater-container .text-container {
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 0.6;
+  width: auto;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+.paris-wheater-container .img-container-paris {
+  width: 100px;
+}
+.paris-wheater-container .title-banner,
+.paris-wheater-container .tpm-description-paris,
+.paris-wheater-container .temperature-text {
+  font-size: 1rem;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

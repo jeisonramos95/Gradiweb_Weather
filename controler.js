@@ -21,7 +21,7 @@ window.addEventListener("load", function () {
   xhr_weather_bogota.open("GET", api_url1);
   xhr_weather_bogota.send();
 
-  xhr_weather_paris.addEventListener("load", onRequetHandler);
+  xhr_weather_paris.addEventListener("load", onRequetHandlerParis);
   xhr_weather_paris.open("GET", api_url2);
   xhr_weather_paris.send();
 
@@ -41,12 +41,27 @@ window.addEventListener("load", function () {
       this.temperatureBgt = response.main.temp;
       console.log(JSON.parse(this.temperatureBgt));
 
-      document.getElementById("temperature_bgt").innerHTML = "-  " + response.main.temp + "°";
-      document.getElementById("tpm-description").innerHTML = response.weather[0].description;
+      document.getElementById("temperature-bgt").innerHTML = "-  " + response.main.temp + "°";
+      document.getElementById("tpm-description-bgt").innerHTML = response.weather[0].description;
 
       var img = document.createElement("img");
       img.src = `./img/icons/${response.weather[0].icon}.png`;
-      document.getElementById("img-container").appendChild(img);
+      document.getElementById("img-container-bgt").appendChild(img);
+    }
+  }
+
+  function onRequetHandlerParis() {
+    if (this.readyState === 4 && this.status === 200) {
+      const response = JSON.parse(this.response);
+      this.temperatureBgt = response.main.temp;
+      console.log(JSON.parse(this.temperatureBgt));
+
+      document.getElementById("temperature-paris").innerHTML = "-  " + response.main.temp + "°";
+      document.getElementById("tpm-description-paris").innerHTML = response.weather[0].description;
+
+      var img = document.createElement("img");
+      img.src = `./img/icons/${response.weather[0].icon}.png`;
+      document.getElementById("img-container-paris").appendChild(img);
     }
   }
 });
