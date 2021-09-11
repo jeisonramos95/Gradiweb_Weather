@@ -1,0 +1,60 @@
+.card-main-banner {
+  background-image: url("./img/banner_bogota2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .img-container {
+    align-items: flex-end;
+    display: flex;
+    width: 100px;
+  }
+
+  .title-container,
+  .weather-container {
+    display: flex;
+    height: 70px;
+    z-index: 1;
+  }
+
+  .title-banner,
+  .temperature-text {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    opacity: 1 !important;
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .tpm-description {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    opacity: 1 !important;
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .temperature-text,
+  .tpm-description {
+    margin-left: 1rem;
+  }
+
+  .text-container {
+    position: absolute;
+    border: solid 2px black;
+    background-color: #ffffff;
+    opacity: 0.6;
+    width: 500px;
+    height: 120px;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
