@@ -4,55 +4,29 @@
 }
 
 .card-main-banner {
-  background-image: url("./img/banner_bogota2.jpg");
-  background-size: 100% auto;
+  background-image: url("./img/banner_bogota3.jpg");
+  background-size: 100% 100%;
   width: 100%;
-  height: 400px;
+  min-height: 300px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 2rem;
 }
 .card-main-banner .img-container-bgt {
-  align-items: flex-end;
-  display: flex;
   width: 100px;
 }
-.card-main-banner .title-container,
-.card-main-banner .weather-container {
-  display: flex;
-  height: 70px;
-  z-index: 1;
-}
 .card-main-banner .title-banner,
+.card-main-banner .tpm-description-bgt,
 .card-main-banner .temperature-text {
-  font-size: 3rem;
-  color: black;
-  align-items: flex-end;
-  display: flex;
-  margin-bottom: 1rem;
-}
-.card-main-banner .tpm-description-bgt {
-  font-size: 3rem;
-  color: black;
-  align-items: flex-end;
-  display: flex;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-}
-.card-main-banner .temperature-text,
-.card-main-banner .tpm-description {
-  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #363636;
 }
 .card-main-banner .text-container {
   position: absolute;
-  border: solid 2px black;
-  background-color: #ffffff;
-  opacity: 0.6;
-  width: 500px;
-  height: 120px;
-  margin: 1rem 0;
+  background-color: #bcbcbc;
+  opacity: 0.9;
+  width: auto;
+  margin: 1rem;
   border-radius: 10px;
   padding: 10px;
 }
@@ -65,23 +39,37 @@
 }
 
 .paris-wheater-container,
-.forest-bgt-container {
+.forecast-bgt-container {
   width: 48%;
   height: 400px;
   border-radius: 10px;
 }
 
-.forest-bgt-container {
+.forecast-bgt-container {
   border: solid black 1px;
+  padding-left: 1rem;
+}
+.forecast-bgt-container .table-forecast {
+  margin: auto;
+  width: 100%;
+}
+.forecast-bgt-container .table-forecast tr:nth-child(2n) {
+  background-color: antiquewhite;
+}
+.forecast-bgt-container .img-forecast {
+  width: 40px;
+}
+.forecast-bgt-container .row-forecast {
+  width: 100%;
 }
 
 .paris-wheater-container {
   background-image: url("./img/banner_paris.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 .paris-wheater-container .text-container {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #bcbcbc;
   opacity: 0.6;
   width: auto;
   margin: 1rem;
@@ -94,7 +82,7 @@
 .paris-wheater-container .title-banner,
 .paris-wheater-container .tpm-description-paris,
 .paris-wheater-container .temperature-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: black;
 }
 
