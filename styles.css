@@ -41,13 +41,17 @@
 .paris-wheater-container,
 .forecast-bgt-container {
   width: 48%;
-  height: 400px;
+  height: 470px;
   border-radius: 10px;
 }
 
 .forecast-bgt-container {
   border: solid black 1px;
   padding-left: 1rem;
+}
+.forecast-bgt-container h2 {
+  margin: 1rem;
+  text-align: center;
 }
 .forecast-bgt-container .table-forecast {
   margin: auto;
