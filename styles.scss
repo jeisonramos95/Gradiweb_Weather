@@ -4,7 +4,7 @@
 }
 
 .card-main-banner {
-  background-image: url("./img/banner_bogota3.jpg");
+  background-image: url("./img/banner_bogota.jpg");
   background-size: 100% 100%;
   width: 100%;
   min-height: 300px;
@@ -96,5 +96,23 @@
   .temperature-text {
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card-second-banner {
+    display: flex;
+    flex-direction: column;
+    .forecast-bgt-container,
+    .paris-wheater-container {
+      width: 100%;
+    }
+    .forecast-bgt-container {
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  .card-main-banner {
+    background-image: url("./img/banner_bogota_mobile.jpg");
   }
 }
