@@ -47,7 +47,7 @@
 
 .forecast-bgt-container {
   border: solid black 1px;
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 .forecast-bgt-container h2 {
   margin: 1rem;

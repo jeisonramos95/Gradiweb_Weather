@@ -49,10 +49,14 @@
 }
 
 .forecast-bgt-container {
+  border: solid black 1px;
+  padding: 0 1rem;
+
   h2 {
     margin: 1rem;
     text-align: center;
   }
+
   .table-forecast {
     margin: auto;
     width: 100%;
@@ -60,8 +64,6 @@
       background-color: antiquewhite;
     }
   }
-  border: solid black 1px;
-  padding-left: 1rem;
 
   .img-forecast {
     width: 40px;
